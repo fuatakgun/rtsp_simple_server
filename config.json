@@ -1,0 +1,26 @@
+{
+  "name": "RTSP Simple Server Add-on",
+  "version": "v0.16.4",
+  "slug": "rtsp_simple_server",
+  "description": "Create RTSP server to broadcast streams, thanks to @aler9 - https://github.com/aler9/rtsp-simple-server",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7"
+  ],
+"boot": "auto",
+  "legacy": true,
+  "ports": {
+    "8554/tcp": 8554,
+    "1935/tcp": 1935
+  },
+  "startup": "application",
+  "options": {
+	  "RTSP_PROTOCOLS": "tcp"
+  },
+  "schema": {
+	  "RTSP_PROTOCOLS": "list(tcp)"
+  },
+  "image": "aler9/rtsp-simple-server"
+}
