@@ -1,6 +1,6 @@
 {
   "name": "RTSP Simple Server Add-on",
-  "version": "v0.16.4",
+  "version": "v0.17.6",
   "slug": "rtsp_simple_server",
   "description": "Create RTSP server to broadcast streams, thanks to @aler9 - https://github.com/aler9/rtsp-simple-server",
   "arch": [
@@ -17,10 +17,14 @@
   },
   "startup": "application",
   "options": {
-	  "RTSP_PROTOCOLS": "tcp"
+	  "RTSP_PROTOCOLS": "tcp",
+	  "RTSP_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
+	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
   },
   "schema": {
-	  "RTSP_PROTOCOLS": "list(tcp)"
+	  "RTSP_PROTOCOLS": "list(tcp)",
+	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
+	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
   },
   "image": "aler9/rtsp-simple-server"
 }
