@@ -13,7 +13,8 @@
   "legacy": true,
   "ports": {
     "8554/tcp": 8554,
-    "1935/tcp": 1935
+    "1935/tcp": 1935,
+	"9997/tcp": 9997
   },
   "startup": "application",
   "options": {
