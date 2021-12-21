@@ -1,6 +1,6 @@
 {
   "name": "RTSP Simple Server Add-on",
-  "version": "v0.17.7",
+  "version": "v0.17.11",
   "slug": "rtsp_simple_server",
   "description": "Create RTSP server to broadcast streams, thanks to @aler9 - https://github.com/aler9/rtsp-simple-server",
   "arch": [
