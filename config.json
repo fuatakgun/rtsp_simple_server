@@ -36,7 +36,7 @@
   },
   "schema": {
 	  "RTSP_API": "list(yes)",
-	  "RTSP_APIADDRESS": "string(:9997)",
+	  "RTSP_APIADDRESS": "list(:9997)",
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
