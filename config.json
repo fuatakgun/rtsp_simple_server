@@ -34,6 +34,7 @@
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
   },
   "schema": {
+	  "HTTP-api": "list(yes)",
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
