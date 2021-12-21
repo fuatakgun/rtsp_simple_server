@@ -22,8 +22,8 @@
   },
   "ports_description": {
     "8554/tcp": "RTSP protocol supports the TCP transport protocol",
-	"1935/tcp": "No idea what this is for.",
-	"9997/tcp": "HTTP api through http://127.0.0.1:9997/v1/paths/list."
+    "1935/tcp": "No idea what this is for.",
+    "9997/tcp": "HTTP api through http://127.0.0.1:9997/v1/paths/list."
   }
   ,
   "startup": "application",
@@ -36,7 +36,7 @@
   },
   "schema": {
 	  "RTSP_API": "list(yes)",
-	  "RTSP_APIADDRESS": "string(9997)",
+	  "RTSP_APIADDRESS": "list(9997)",
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
