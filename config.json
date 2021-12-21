@@ -28,13 +28,13 @@
   ,
   "startup": "application",
   "options": {
-	  "RSTP_API": "yes",
+	  "RTSP_API": "yes",
 	  "RTSP_PROTOCOLS": "tcp",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
   },
   "schema": {
-	  "RSTP_API": "list(yes)",
+	  "RTSP_API": "list(yes)",
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
