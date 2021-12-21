@@ -16,9 +16,9 @@
     "config:rw"
   ],
   "ports": {
-    "8554/tcp": 8554,
     "1935/tcp": 1935,
-	"9997/tcp": 9997
+	"8554/tcp": 8554,
+    "9997/tcp": 9997
   },
   "ports_description": {
     "8554/tcp": "RTSP protocol supports the TCP transport protocol",
@@ -28,13 +28,13 @@
   ,
   "startup": "application",
   "options": {
-	  "api": "yes",
+	  "RSTP_API": "yes",
 	  "RTSP_PROTOCOLS": "tcp",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
   },
   "schema": {
-	  "HTTP-api": "list(yes)",
+	  "RSTP_API": "list(yes)",
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
