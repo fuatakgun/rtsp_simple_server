@@ -1,6 +1,6 @@
 {
   "name": "RTSP Simple Server Add-on",
-  "version": "v0.17.6",
+  "version": "v0.17.11",
   "slug": "rtsp_simple_server",
   "description": "Create RTSP server to broadcast streams, thanks to @aler9 - https://github.com/aler9/rtsp-simple-server",
   "arch": [
@@ -9,19 +9,34 @@
     "armhf",
     "armv7"
   ],
-"boot": "auto",
+  "boot": "auto",
   "legacy": true,
+  "map": [
+    "share:rw",
+    "config:rw"
+  ],
   "ports": {
+    "1935/tcp": 1935,
     "8554/tcp": 8554,
-    "1935/tcp": 1935
+    "9997/tcp": 9997
   },
+  "ports_description": {
+    "8554/tcp": "RTSP protocol supports the TCP transport protocol",
+    "1935/tcp": "No idea what this is for.",
+    "9997/tcp": "HTTP api through http://127.0.0.1:9997/v1/paths/list."
+  }
+  ,
   "startup": "application",
   "options": {
+	  "RTSP_API": "yes",
+	  "RTSP_APIADDRESS": ":9997",
 	  "RTSP_PROTOCOLS": "tcp",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
   },
   "schema": {
+	  "RTSP_API": "list(yes)",
+	  "RTSP_APIADDRESS": "list(:9997)",
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
 	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
